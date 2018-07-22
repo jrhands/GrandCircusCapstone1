@@ -34,11 +34,11 @@ namespace Capstone1
             }
             if (characterPos == 0)
             {
-                Console.WriteLine(input + "way");
+                Console.WriteLine(input.ToLower() + "way");
             }
             else if (characterPos > 0)
             {
-                Console.WriteLine(input.Substring(characterPos, input.Length - characterPos) + input.Substring(0, characterPos) + "ay");
+                Console.WriteLine((input.Substring(characterPos, input.Length - characterPos) + input.Substring(0, characterPos) + "ay").ToLower());
             }
         }
 
