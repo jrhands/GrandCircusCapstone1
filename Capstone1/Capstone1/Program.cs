@@ -32,10 +32,13 @@ namespace Capstone1
                     break;
                 }
             }
-            if (characterPos >= 0)
+            if (characterPos == 0)
             {
-                Console.WriteLine(input.Substring(0, characterPos));
-                Console.WriteLine(input.Substring(characterPos, input.Length - characterPos));
+                Console.WriteLine(input + "way");
+            }
+            else if (characterPos > 0)
+            {
+                Console.WriteLine(input.Substring(characterPos, input.Length - characterPos) + input.Substring(0, characterPos) + "ay");
             }
         }
 
